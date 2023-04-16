@@ -44,7 +44,7 @@
       <module name="maven-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.goit.*" />
+          <option name="PATTERN" value="dto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

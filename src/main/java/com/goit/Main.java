@@ -2,6 +2,7 @@ package com.goit;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.goit.dto.User;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,7 +14,7 @@ public class Main {
                     .setPrettyPrinting()
                     .serializeNulls()
                     .create();
-            Dto fromJson = gson.fromJson(new String(resourceAsStream.readAllBytes()), Dto.class);
+            User fromJson = gson.fromJson(new String(resourceAsStream.readAllBytes()), User.class);
             String toJson = gson.toJson(fromJson);
             System.out.println(toJson);
         }
