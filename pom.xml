@@ -34,6 +34,7 @@
 
     </dependencies>
     <build>
+        <finalName>myname</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -47,6 +48,7 @@
                             <mainClass>com.goit.Main</mainClass>
                         </manifest>
                     </archive>
+                    <appendAssemblyId>false</appendAssemblyId>
                 </configuration>
                 <executions>
                     <execution>
